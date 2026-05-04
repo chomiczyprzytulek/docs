@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-04 Mon 20:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chomiczy Przytułek (projekt ID 2026, etap 1)</title>
+<meta name="author" content="Adam Maleszka, Józef Potaczek, Patryk Rosół, Dominik Kaim" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chomiczy Przytułek (projekt ID 2026, etap 1)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org661a905">1. Wprowadzenie</a></li>
+<li><a href="#org44d0622">2. Ograniczenie zakresu bazy danych</a></li>
+<li><a href="#org23777fa">3. Ciekawe problemy i ich rozwiązania</a>
+<ul>
+<li><a href="#org14e6f28">3.1. Drzewo Gatunków</a></li>
+<li><a href="#org0b2b470">3.2. Formularze adopcyjne</a></li>
+<li><a href="#orgdd0ab0a">3.3. Wolontariusze</a></li>
+<li><a href="#orgb39422c">3.4. Proces adopcyjny</a></li>
+<li><a href="#org40cbb12">3.5. Generowanie danych przykładowych</a></li>
+</ul>
+</li>
+<li><a href="#orge04e898">4. Przyszłe fazy projektu</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org661a905" class="outline-2">
+<h2 id="org661a905"><span class="section-number-2">1.</span> Wprowadzenie</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Piszemy bazę pod backend platformy <i>Stowarzyszenia Pomocy Chomikom</i>. Jest to
+organizacja, której głównym celem jest znajdowanie bezpiecznych domów chomikom i
+promowanie dobrych praktyk traktowania zwierząt.
+</p>
+
+<p>
+W skład Stowarzyszenia wchodzą liczne Centra Adopcyjne będące fizycznymi
+placówkami, do których trafiają chomiki z schronisk, a także interwencji
+wolontariuszy. Chomiki te są klasyfikowane przez wolontariuszy, przygotowywany
+jest im opis, a następnie wystawiana jest oferta adopcyjna.
+</p>
+
+<p>
+Każdy użytkownik odwiedzający stronę może przejrzeć wystawione do adopcji
+chomiki, a następnie przystąpić do procesu adopcyjnego. Każda aplikacja
+adopcyjna zaczyna się od wystawienia formularza, a kończy się podpisaniem umowy
+adopcyjnej. Cały proces prowadzony jest poprzez funkcję czatu użytkownika z
+wolontariuszem będącym tak zwanym <i>opiekunem oferty</i>. Po podpisaniu umowy
+adopcyjnej Stowarzyszenie nadal utrzymuje kontakt z adoptującym, prowadzone są
+wizyty kontrolne i uzupełniana jest dokumentacja medyczna danego zwierzęcia.
+</p>
+</div>
+</div>
+<div id="outline-container-org44d0622" class="outline-2">
+<h2 id="org44d0622"><span class="section-number-2">2.</span> Ograniczenie zakresu bazy danych</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Zbierane informacje ograniczyliśmy wyłącznie do funkcjonalności wymaganych, by
+dostarczyć Stowarzyszeniu i użytkownikowi możliwie funkcjonalną platformę. W tym
+zdecydowaliśmy się, że nie przechowujemy wewnętrznych danych Stowarzyszenia, a
+jedynie te, które w jakiś sposób mają być wypisywane adoptującemu.
+</p>
+
+<p>
+Z początku planowaliśmy także dosyć nowatorskie rozwiązania, w tym wirtualne
+adopcje i możliwość zgłaszania się użytkowników jako <i>Przytułek</i> (czyli Dom
+Tymczasowy). Miało działać to tak, że jeśli dany użytkownik nie jest w stanie
+przyjąć jakiegoś chomika pod swój dach, ale chciałby zapewnić mu dach nad głową,
+to za miesięczną subskrypcją może przekazać takiego chomika do jednego z
+<i>Przytułków</i>. Wówczas otwiera się czat użytkownika z takim Przytułkiem i
+użytkownik może dopytywać się, co tam u jego chomika, dostawać zdjęcia, a nawet
+umawiać się na wizyty stacjonarne. Przytułek miałby swój własny Profil, na
+którym udostępniane byłyby posty, galerie, a każda działalność Przytułka byłaby
+weryfikowana przez przypisanych wolontariuszy.
+</p>
+
+<p>
+Niestety, w trakcie projektowania bazy tego systemu okazało się, że całość
+platformy wymaga 50+ tabel i z przyczyn racjonalnych postanowiliśmy ograniczyć
+zakres projektu, wbrew złożonej pierwotnie deklaracji na MS Teams.
+</p>
+
+<p>
+Nie mniej jednak, projekt dużo nas nauczył i nawet okrojona wersja zaskoczyła
+nas mnogością zagwozdek projektowych.
+</p>
+</div>
+</div>
+<div id="outline-container-org23777fa" class="outline-2">
+<h2 id="org23777fa"><span class="section-number-2">3.</span> Ciekawe problemy i ich rozwiązania</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org14e6f28" class="outline-3">
+<h3 id="org14e6f28"><span class="section-number-3">3.1.</span> Drzewo Gatunków</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Chcieliśmy napisać bazę tak, że skaluje się możliwie dobrze i zakłada możliwie
+mało odnośnie szczegółów technicznych procesów adopcyjnych.
+</p>
+
+<p>
+W związku z tym, zaprojektowaliśmy bazę tak, że nie dokonujemy żadnych założeń,
+że podmiotem adopcji mogą być chomiki. De facto może to być dowolne zwierze:
+</p>
+
+
+<div id="orgc335cb2" class="figure">
+<p><img src="./assets/species.png" alt="species.png" />
+</p>
+</div>
+
+<p>
+Uznaliśmy, że różne gatunki (czy też kategorie) zwierząt najlepiej trzymać w
+postaci drzewa, gdyż wtedy użytkownik szukający zwierzęcia do adopcji może
+łatwiej filtrować, do jakiego poddrzewa się ogranicza. Takie drzewo będzie
+hard-code’owane przez Administratorów, wspólne dla całej platformy i może
+wyglądać tak:
+</p>
+
+
+<div id="org23efe2a" class="figure">
+<p><img src="./assets/species_tree.svg" alt="species_tree.svg" class="org-svg" />
+</p>
+</div>
+
+<p>
+Dzięki temu zdecydowany użytkownik może przefiltrować tylko chomiki dżungalskie,
+a mniej zdecydowany — wybrać kategorię “Chomik”.
+</p>
+
+<p>
+Użycie drzewa pociąga za sobą interesujące możliwości.
+</p>
+</div>
+</div>
+<div id="outline-container-org0b2b470" class="outline-3">
+<h3 id="org0b2b470"><span class="section-number-3">3.2.</span> Formularze adopcyjne</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Formularze adopcyjne trzymamy w bazie jako <code>JSONB</code>, który będzie parse’owany
+przez frontend. Jako że różne centra adopcyjne mogą chcieć przypisać różne
+formularze w różnym czasie do różnych gatunków zwierząt, to pojawia się pytanie
+jak to zrobić najmądrzej, żeby nie powielać formularza na każdy wierzchołek
+drzewa?
+</p>
+
+
+<div id="org1ef06b2" class="figure">
+<p><img src="./assets/adoption_forms.png" alt="adoption_forms.png" />
+</p>
+</div>
+
+<p>
+Rozwiązaliśmy to tak, że definiujemy, że jeśli zwierze ma gatunek X i jest
+wystawione przez centrum adopcyjne Y, to jego formularz adopcyjny to najniższy
+przodek X w drzewie gatunków, który ma aktualne przypisanie formularza dla
+centrum Y.
+</p>
+
+<p>
+Pozyskiwanie formularza dla danego zwierzęcia zgodnie z tą definicją będzie
+bardzo ciekawym wykorzystaniem zapytań rekurencyjnych z CTE i funkcji.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdd0ab0a" class="outline-3">
+<h3 id="orgdd0ab0a"><span class="section-number-3">3.3.</span> Wolontariusze</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+W Stowarzyszeniu działają wolontariusze i każdy z nich ma określoną rolę.
+Niektórzy mogą pracować stacjonarnie w Centrum Adopcyjnym i klasyfikować
+chomiki, prowadzić kontrole, zawozić na badania, inni mogą być tzw. opiekunami
+ofert i prowadzić kontakt z adoptantami, i muszą przecież też być tacy, którzy
+są wyżej w hierarchii i przypisują podwładnym odpowiednie zadania.
+</p>
+
+<p>
+W przypadku implementacji zunifikowanej platformy jest to ekstremalnie ciężkie,
+gdyż z każdą wpisaną krotką pojawia się pytanie: “kto jest uprawniony tę krotkę
+wprowadzić?”. Ponadto, wolontariusze to ludzie, więc system powinien być odporny
+na przypadki, kiedy jakiś wolontariusz jest nieobecny — wtedy jego robotę musi
+przejąć ktoś inny.
+</p>
+
+
+<div id="org45adcc7" class="figure">
+<p><img src="./assets/volunteers.png" alt="volunteers.png" />
+</p>
+</div>
+
+<p>
+Zrealizowaliśmy to tak, że wolontariusze, ponownie, tworzą drzewo (dokładniej
+<i>las</i>) i każdy wolontariusz jest podłączony pod określone konto użytkownika. Do
+tego w systemie Administratorzy definiują role, a uprawnieni do tego użytkownicy
+przypisują innym użytkownikom, jaki mają zbiór ról. Każda rola jest zbiorem
+booli, mówiących, czy użytkownik może wykonać daną akcję. Domyślnie wszystkie te
+boole ustawione są na <code>false</code> i finalny zestaw uprawnień użytkownika to logiczny
+OR po wszystkich rolach (czego liczenie będzie można zrealizować widokiem/funkcją).
+</p>
+
+<p>
+Wśród uprawnień mogą pojawiać się te, które mówią, że daną czynność może wykonać
+X, nawet jeśli to zadanie zostało przypisane synom X. Albo uprawnienia, które
+mówią, że X może zarządzać swoimi synami.
+</p>
+
+<p>
+W ten sposób, jak zdefiniuje się nad wolontariuszami hierarchię, można
+automatycznie zaimplementować logikę, kto na przykład jest odpowiedzialny
+odpowiedzieć danemu adoptującemu, jeśli dany opiekun oferty jest obecnie
+nieobecny.
+</p>
+
+<p>
+Precyzyjne weryfikowanie uprawnień i poprawności interakcji będzie odbywało się
+po stronie backendu (oferującego REST API platformy), gdyż dodawanie tego w
+postaci <code>CHECK</code> w bazie słabo się skaluje.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb39422c" class="outline-3">
+<h3 id="orgb39422c"><span class="section-number-3">3.4.</span> Proces adopcyjny</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Proces adopcyjny ma następujący przebieg:
+</p>
+
+<ol class="org-ol">
+<li>uprawniony wolontariusz wystawia chomika w formie krotki (<code>adoption_offers</code>)</li>
+<li>zainteresowany użytkownik wysyła formularz odpowiedni dla danego gatunku
+chomika (<code>forms_filled</code>)</li>
+<li>wraz z wypełnieniem formularza, tworzona jest “instancja” adopcji w
+<code>adoption_process</code></li>
+<li>wolontariusz potwierdza lub odrzuca formularz, tworzony jest czat
+wolontariusza z adoptującym (<code>chats</code>)</li>
+<li>wolontariusz wysyła przez chat wszystkie potrzebne materiały i załączniki;
+poprzez chat umawia się z adoptującym na wizytę przed-adopcyjną</li>
+<li>odbywana jest wizyta przed-adopcyjna na miejscu adoptującego</li>
+<li>po przejściu, wolontariusz umawia się z użytkownikiem na podpisanie umowy
+adopcyjnej w Centrum Adopcyjnym</li>
+<li>zostaje podpisana umowa i chomik zostaje zawierzony przez adoptującego do
+docelowego domu</li>
+<li>utrzymywany jest kontakt poprzez chat z adoptującym przez następne 6 miesięcy</li>
+<li>odbywają się wizyty kontrolne i w przypadku naruszenia umowy chomik jest zabierany</li>
+<li>chat zostaje otwarty; adoptujący jest zobowiązany zgłaszać informacje o
+stanie chorobowym chomika</li>
+<li>w przypadku śmierci, rzecz ta jest odnotowywana i proces się zamyka.</li>
+</ol>
+
+<p>
+Zamodelowanie tego procesu w sposób uniwersalny było bardzo dużym wyzwaniem. A
+rozwiązaliśmy to tak:
+</p>
+
+
+<div id="org03bab15" class="figure">
+<p><img src="./assets/adoption_process.png" alt="adoption_process.png" />
+</p>
+</div>
+
+<p>
+Oddelegowaliśmy wszystkie wewnętrzne szczegóły procesu adopcyjnego do czatu
+(wolontariusz jest zobowiązany przekazywać wszystkie cenne informacje przez
+czat), z kolei w samej bazie trzymamy wyłącznie jedną tabelę
+<code>adoption_process_status_history</code>, która trzyma wszystkie zmiany statusu danej
+instancji adopcji. Dla każdego statusu interesują nas de facto wyłącznie dwie rzeczy:
+</p>
+
+<ul class="org-ul">
+<li><code>is_terminating</code> — czy dany status zamyka proces adopcyjny</li>
+<li><code>is_pet_physically_there</code> — czy po danym wpisie chomik znajduje się u
+adoptanta, czy w Centrum Adopcyjnym</li>
+</ul>
+
+<p>
+Przykładowe statusy prezentują się tak:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil"> id |                   name                   | is_terminating | is_pet_physically_there 
+----+------------------------------------------+----------------+-------------------------
+  1 | Form rejected                            | t              | f
+  2 | Form approved                            | f              | f
+  3 | User resigned                            | t              | f
+  4 | Pre-adoption visit passed                | f              | f
+  5 | Pre-adoption visit failed                | t              | f
+  6 | Adoption agreement signed                | f              | f
+  7 | Pet delivered                            | f              | t
+  8 | User violated rules, forced interception | t              | f
+  9 | User adoption withdrawal, pet returned   | t              | f
+ 10 | Pet death                                | t              | t
+</pre>
+</div>
+
+<p>
+Dzięki temu, w miarę łatwo jest odpowiedzieć na pytanie “czy dany chomik
+znajduje się u jakiegoś użytkownika, czy w Centrum”. Wystarczy przejrzeć
+wszystkie procesy adopcyjne, w jakich znajdował się dany chomik (mało),
+popatrzeć na najnowszy status i odczytać <code>is_pet_physically_there</code>.
+</p>
+
+<p>
+Zapytanie to będzie można zrealizować jako funkcja i będzie ono krytycznie
+ważne, gdyż na przykład:
+</p>
+
+<ul class="org-ul">
+<li>zaadoptowanego chomika nie można wystawić dwa razy</li>
+<li>nie można przenieść chomika do innego centrum adopcyjnego, jeśli jest u
+adoptanta!</li>
+</ul>
+
+<p>
+Na diagramie można zauważyć pewną redundancję, gdyż zarówno w procesie
+adopcyjnym jak i w wypełnieniu formularza zapisujemy, kto dokonał danej akcji.
+Uważamy jednak to za konieczne, gdyż chcemy pozostawić na to miejsce, że w
+przyszłości <code>forms_filled</code> nie będzie dotyczyło wyłącznie adopcji.
+</p>
+</div>
+</div>
+<div id="outline-container-org40cbb12" class="outline-3">
+<h3 id="org40cbb12"><span class="section-number-3">3.5.</span> Generowanie danych przykładowych</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Ze wszystkich wyzwań niewątpliwie najtrudniejsze było wygenerowanie sensownych
+danych to tabel i wątek ten zajął nam łącznie 25 roboczogodzin.
+</p>
+
+<p>
+Z powodu na głębokie powiązania między tabelami, było to niezmiernie ciężkie, by
+wygenerować dane, które reprezentują sensowne procesy adopcyjne bez wprowadzania
+ich ręcznie. Udało nam się jednak opracować autorski system, który działa
+następująco:
+</p>
+
+<p>
+Podzieliliśmy DAGa zależności między tabelami na warstwy i na każdą z warstw
+zrobiliśmy folder, wyszło nam kolejno:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">00-sinks/
+01-users/
+02-adoption-centers/
+03-forms/
+03-roles/
+04-adoption_forms/
+04-volunteers/
+05-managed_pets/
+06-adoption_offers/
+07-adoption_processes/
+08-chats/
+</pre>
+</div>
+
+<p>
+W każdym folderze stworzyliśmy plik <code>input.sql</code>, w którym znajdowały się SELECTy
+pobierające z bazy te dane, które są potrzebne do sensownego wygenerowania tabel
+określonego modułu.
+</p>
+
+<p>
+W każdym folderze znajdował się też program <code>process.cpp</code>, który na <code>stdin</code>
+otrzymywał wynik z danego <code>input.sql</code>, zaś na <code>stdout</code> wypisywał gotowy skrypt
+postgresql, który wstawia krotki do tabel.
+</p>
+
+<p>
+Całą kompilacją pliku <code>create.sql</code> koordynował plik <code>Makefile</code> i działał on tak:
+</p>
+
+<ol class="org-ol">
+<li>stawiał za pomocą dockera tymczasową instancję postgresa</li>
+<li>dla każdego folderu/modułu:
+<ol class="org-ol">
+<li>kompilował process.cpp</li>
+<li>wykonywał <code>input.sql</code> na obecnym stanie bazy</li>
+<li>uruchamiał <code>process</code> z rezultatem skryptu <code>input.sql</code> na wejściu (jako csv)</li>
+<li>output programu wykonywał na bazie postgres, by wprowadzić nowo wygenerowane krotki modułu</li>
+</ol></li>
+<li>na samym końcu łączone były wszystkie pliki częściowe (wszystkie outputy
+programów <code>process</code>) w jeden plik <code>create.sql</code> i ten plik dostarczyliśmy Pani
+Profesor.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orge04e898" class="outline-2">
+<h2 id="orge04e898"><span class="section-number-2">4.</span> Przyszłe fazy projektu</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Platforma będzie podzielona na dwa komponenty:
+</p>
+
+<ul class="org-ul">
+<li><code>backend</code> kontaktujący się z postgresql, upewniający się, że dane są spójne i oferujący REST API</li>
+<li><code>fronted</code> platformę <a href="https://chomiczyprzytulek.org">https://chomiczyprzytulek.org</a>, wchodzącą w kontakt z danymi poprzez REST API</li>
+</ul>
+
+<p>
+Wśród najbliższych prac widzimy definiowanie specyfikacji openapi i
+projektowanie constraintów, widoków, funkcji i triggerów bazy.
+</p>
+
+<p>
+Tak, domena <a href="https://chomiczyprzytulek.org">https://chomiczyprzytulek.org</a> jest naszą własnością, a cała
+infrastruktura działa na prywatnych serwerach Adama Maleszki : )
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Adam Maleszka, Józef Potaczek, Patryk Rosół, Dominik Kaim</p>
+<p class="date">Created: 2026-05-04 Mon 20:35</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
