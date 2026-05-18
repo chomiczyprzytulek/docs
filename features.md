@@ -2,8 +2,8 @@
 
 Wzorujemy się na platformach:
 
-- https://kroliki.net/pl/
-- https://swinkimorskie.eu/
+- [https://kroliki.net/pl/](https://kroliki.net/pl/)
+- [https://swinkimorskie.eu/](https://swinkimorskie.eu/)
 
 Jednakże większość tych platform działa na zasadzie, że jeżeli chce się
 cokolwiek zrobić, to pisze się do Centrum Adopcyjnego.
@@ -14,11 +14,12 @@ sami stawali się Domami Tymczasowymi i oferowali także usługę krótkotermino
 opieki nad czyimiś chomikami.
 
 ## Use-case'y
+
 ### Oddawanie chomika
 
 - znalazłeś chomika, przygarnąłeś go i chcesz go przekazać Stowarzyszeniu
 - posiadałeś chomika, ale z różnych powodów nie możesz się nim już dłużej
-  zajmować i przekazujesz go Stowarzyszeniu
+zajmować i przekazujesz go Stowarzyszeniu
 
 Zgłasza się to poprzez stronę internetową przez formularz przez podanie maila
 lub wysyłając maila bezpośrednio do Centrum Adopcyjnego; lub możesz też przyjść
@@ -57,9 +58,9 @@ Tymczasowego, który ma wolne sloty.
 ### Społeczność entuzjastów chomików
 
 - wolontariusze mają swoje strony na platformie:
-  - mogą tam być oceniani
-  - mogą postować zdjęcia ze swoich chomików?
-  - przycisk do wsparcia finansowego wolontariusza
+   - mogą tam być oceniani
+   - mogą postować zdjęcia ze swoich chomików?
+   - przycisk do wsparcia finansowego wolontariusza
 - eventy i dni otwarte w Centrach Adopcyjnych
 
 ## Centrum Adopcyjne
@@ -82,7 +83,7 @@ do Centrów Adopcyjnych i zajmują się takimi rzeczami, jak:
 - przygotowywanie opisów do wystawiania chomików na platformie
 - kontakt z osobami przystępującymi do adopcji
 - wizyty przed-adopcyjne w domach osób przystępujących do adopcji, podpisywanie
-  umów adopcyjnych
+umów adopcyjnych
 
 Woluntariusze nie będą mieli własnych dedykowanych paneli zarządzania na
 Platformie. Ale będziemy przechowywali informacje o wolontariuszach w bazie
@@ -114,17 +115,17 @@ przebywają na pobycie krótkoterminowym w Domu Tymczasowym).
 Dany chomik wewnętrzny może być w jednym z trzech stanów:
 
 - chomik został wpisany do bazy, ale jeszcze nie został wystawiony na platformie
-  do adopcji (np. chomik jest bardzo mały, świeżo się urodził, albo jest na tyle
-  schorowany, że nie nadaje się do wystawienia, ale nadal chcemy go trzymać w
-  bazie)
+do adopcji (np. chomik jest bardzo mały, świeżo się urodził, albo jest na tyle
+schorowany, że nie nadaje się do wystawienia, ale nadal chcemy go trzymać w
+bazie)
 - chomik jest wystawiony do adopcji, przebywa w Centrum Adopcyjnym i czeka na:
-  albo adopcję fizyczną, albo na adopcję wirtualną (sfinansowanie pobytu w Domu
-  Tymczasowym)
+albo adopcję fizyczną, albo na adopcję wirtualną (sfinansowanie pobytu w Domu
+Tymczasowym)
 - chomik jest w procesie adopcji fizycznej, okres przejściowy (czyli jakiś
-  chętny zgłosił chęć wzięci chomika do adopcji, ale jeszcze chomik nie trafił w
-  ręce nowego właściciela)
+chętny zgłosił chęć wzięci chomika do adopcji, ale jeszcze chomik nie trafił w
+ręce nowego właściciela)
 - chomik przebywa na stałe u nowego właściciela w ramach fizycznej adopcji
-  (planowane powinny być kontrole przez wolontariuszy)
+(planowane powinny być kontrole przez wolontariuszy)
 - chomik ma finansowany pobyt w Domu Tymczasowym
 
 ## Konta na platformie
