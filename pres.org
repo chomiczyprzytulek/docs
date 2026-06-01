@@ -1,0 +1,55 @@
+* Slide 1
+
+- kroliki_krakow.jpg
+- hodor.png
+
+* Slide 2
+
+schema.png (takes the whole slide)
+
+* Slide 3
+
+- volunteers.png
+- adoptions.png
+
+* Slide 4
+
+- species.png
+- species_tree.svg
+
+* Slide 5
+
+- zig.png (takes the whole slide)
+
+* Slide 6
+
+- qr.png
+
+* Presentation plan
+
+- wprowadzenie o tym, jak ważne są chomiki na TCSie. W tle strona Hodora o królikach
+- zaniepokojenie tym, że nie ma Stowarzyszenia Pomocy Chomikom
+- trudności data-inżynieryjne, pokazanie tabeli i przedstawienie skrótowo niebanalności:
+  - wieloetapowość całego procesu adopcji
+  - uprawnienia wolontariuszy, hierarchia wolontariuszy
+  - drzewo gatunków chomików
+- główny problem projektu: krótki żywot chomików -> rozwiązanie: wydajny backend w zigu
+- kilka słów o backendzie
+- pokazanie strony https://chomiczyprzytulek.org; możemy wrzucić dupny kod QR na całą stronę
+- chwalimy się, że domena jest nasza
+- demo wraz z p. Katarzyną, w której pani Katarzyna adoptuje chomika
+
+* Colour pallete
+
+Admin Panel
+
+  - Primary: Indigo-600 (#4f46e5) — buttons, links, badges
+  - Neutral: Slate scale (50–900) — backgrounds, borders, text
+  - States: Emerald (success), Amber (warning), Red (danger)
+
+  Public Site
+
+  - Background: Warm off-white (#fdf8f3)
+  - Text: Near-black Stone-900 (#1c1917)
+  - Accent: Amber scale (50–900) — borders, headings, focus rings (#b45309)
+  - Supporting: Stone (secondary text), Green (positive states), Red (errors/danger)
