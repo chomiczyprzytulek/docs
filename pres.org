@@ -41,15 +41,9 @@ schema.png (takes the whole slide)
 
 * Colour pallete
 
-Admin Panel
+Public Site
 
-  - Primary: Indigo-600 (#4f46e5) — buttons, links, badges
-  - Neutral: Slate scale (50–900) — backgrounds, borders, text
-  - States: Emerald (success), Amber (warning), Red (danger)
-
-  Public Site
-
-  - Background: Warm off-white (#fdf8f3)
-  - Text: Near-black Stone-900 (#1c1917)
-  - Accent: Amber scale (50–900) — borders, headings, focus rings (#b45309)
-  - Supporting: Stone (secondary text), Green (positive states), Red (errors/danger)
+- Background: Warm off-white (#fdf8f3)
+- Text: Near-black Stone-900 (#1c1917)
+- Accent: Amber scale (50–900) — borders, headings, focus rings (#b45309)
+- Supporting: Stone (secondary text), Green (positive states), Red (errors/danger)
